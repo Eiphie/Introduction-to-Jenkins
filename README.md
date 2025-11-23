@@ -15,7 +15,10 @@ Jenkins is an open-source automation server used to automate the building, testi
 
 ## Project Setup
 
-Set Up the NFS Server
+### Set Up the NFS Server
+Ensure the NFS server infrastructure is properly deployed and configured from the [previous project decumentation](https://github.com/Eiphie/Web-Solution-with-Wordpress)
+
+The commands below are meant to allow Jenkins to SSH to NFS and copy files into the /mnt/apps directory:
 ```
 sudo chmod 700 ~/.ssh
 sudo chmod 600 ~/.ssh/authorized_keys
@@ -88,11 +91,11 @@ Setting up Jenkins on browser
 
 Configure “Publish Over SSH”
 
-- Name: nfs-server
+- Name: NFS
 - Host: <nfs-private-ip>
 - Port: 22
 - Username: ec2-user
-- Credentials: choose nfs-ssh
+- Key: private key
 - Test connection: should be SUCCESS
 - Under Post build actions select `Send build artifacts over SSH` then save
 
