@@ -28,7 +28,7 @@ ls /mnt/apps
 ```
 <img width="784" height="462" alt="Screenshot 2025-11-22 at 08 23 29" src="https://github.com/user-attachments/assets/4c64ee9c-1b6f-4f31-b919-0175887ab5f9" />
 
-## Setup Jenkins Server
+### Setup Jenkins Server
 Launch an ubuntu EC2 instance on AWS and name it `Jenkins`
 
 ```
