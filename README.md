@@ -15,7 +15,7 @@ Jenkins is an open-source automation server used to automate the building, testi
 
 ## Project Setup
 
-### Set Up the NFS Server
+### Setup the NFS Server
 Ensure the NFS server infrastructure is properly deployed and configured from the [previous project decumentation](https://github.com/Eiphie/Web-Solution-with-Wordpress)
 
 The commands below are meant to allow Jenkins to SSH to NFS and copy files into the /mnt/apps directory:
@@ -28,7 +28,7 @@ ls /mnt/apps
 ```
 <img width="784" height="462" alt="Screenshot 2025-11-22 at 08 23 29" src="https://github.com/user-attachments/assets/4c64ee9c-1b6f-4f31-b919-0175887ab5f9" />
 
-
+## Setup Jenkins Server
 Launch an ubuntu EC2 instance on AWS and name it `Jenkins`
 
 ```
